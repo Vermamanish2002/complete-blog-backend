@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration app</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="w-full h-screen bg-gray-800 text-white flex items-center justify-center">
+      <form class="flex flex-col items-center 
+       justify-center w-[500px] h-[500px] border border-white rounded-md  "
+       action="/register" 
+          method="POST"
+          onsubmit="window.location.href='/login'"
+
+       > 
+        <h1 class="text-3xl font-bold mb-[20px]">Register</h1>
+        <input
+          type="text"
+          placeholder="name"
+          class="w-[80%] p-2 m-2 rounded-md bg-gray-100 text-black text-[20px]"
+          name="name"
+        />
+        <input
+          type="text"
+          placeholder="username"
+          class="w-[80%] p-2 m-2 rounded-md bg-gray-100 text-black text-[20px]"
+          name="username"
+        />
+        <input
+          type="number"
+          placeholder="age"
+          class="w-[80%] p-2 m-2 rounded-md bg-gray-100 text-black text-[20px]"
+          name="age"
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          class="w-[80%] p-2 m-2 rounded-md bg-gray-100 text-black text-[20px]"
+          name="email"
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          class="w-[80%] p-2 m-2 rounded-md bg-gray-100 text-black text-[20px]"
+          name="password"
+        />
+          <button
+            class="w-[80%] p-2 m-2 rounded-md bg-blue-500 text-white"
+            type="submit">Register
+          </button>
+          <a class="text-blue-600" href="/login">click here for login</a>
+      </form>
+    </div>
+  </body>
+</html>
